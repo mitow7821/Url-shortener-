@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+main {
+    nav {
+        display: flex;
+        align-items: center;
+        .links {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .hero{
+        display: flex;
+    }
+}
+.statistics {
+    .heading {
+        text-align: center;
+    }
+    .boxes {
+        display: flex;
+    }
+}
+.boost {
+    text-align: center;
+}
+footer {
+    display: grid;
+    grid-template-columns: 35% 1fr 20%;
+    .urls {
+        display: flex;
+        .links{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.shortlinks{
+    .link{
+        display: flex;
+        justify-content: space-between;
+    }
+    div{
+        display: flex;
+    }
+}

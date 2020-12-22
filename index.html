@@ -1,83 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
+  <main>
+    <nav>
+      <div class="links">
+        <a href="/">
+          <img src="/images/logo.svg" alt="logo">
+        </a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+      </div>
 
-  Features
-  Pricing
-  Resources
+      <div class="login">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="text">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand’s recognition and get detailed insights
+          on how your links are performing.</p>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="illustration">
+        <img src="/images/illustration-working.svg" alt="">
+      </div>
+    </div>
+  </main>
 
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="shorten">
+    <input type="text" placeholder="Shorten a link here..." name="link" class="link">
+    <button type="submit">Shorten It!</button>
   </div>
+
+  <div class="shortlinks">
+    <div class="link">
+      <p>nsfjnsdjfsd</p>
+      <div>
+        <p>fsdjfb</p>
+        <button>Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="statistics">
+    <div class="heading">
+      <h2>Advanced Statistics</h2>
+      <p>Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+    </div>
+
+    <div class="boxes">
+      <div class="box">
+        <div class="circle">
+          <img src="/images/icon-brand-recognition.svg" alt="brand">
+        </div>
+        <h3>Brand Recognition</h3>
+        <p>Boost your brand recognition with each click. Generic links don’t
+          mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+
+      <div class="box">
+        <div class="circle">
+          <img src="/images/icon-detailed-records.svg" alt="brand">
+        </div>
+        <h3>Detailed Records</h3>
+        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content
+          helps inform better decisions.
+        </p>
+      </div>
+
+      <div class="box">
+        <div class="circle">
+          <img src="/images/icon-fully-customizable.svg" alt="brand">
+        </div>
+        <h3>Fully Customizable</h3>
+        <p>Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="boost">
+    <h2>Boost your links today</h2>
+    <a href="#">Get Started</a>
+  </div>
+  <footer>
+    <a href="/"><img src="/images/logo.svg" alt="logo"></a>
+
+    <div class="urls">
+      <div class="links">
+        <h4>Features</h4>
+        <a href="">Link Shortening</a>
+        <a href="">Branded Links</a>
+        <a href="">Analytics</a>
+      </div>
+
+      <div class="links">
+        <h4>Resources</h4>
+        <a href="">Blog</a>
+        <a href="">Developers</a>
+        <a href="">Support</a>
+      </div>
+
+      <div class="links">
+        <h4>Company</h4>
+        <a href="">About</a>
+        <a href="">Our Team</a>
+        <a href="">Careers</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="icons">
+        <a href="#"><img src="/images/icon-facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="/images/icon-twitter.svg" alt="twitter"></a>
+        <a href="#"><img src="/images/icon-pinterest.svg" alt="pinterest"></a>
+        <a href="#"><img src="/images/icon-instagram.svg" alt="ig"></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
