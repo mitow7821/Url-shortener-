@@ -66,7 +66,7 @@ main {
                 }
             }
         }
-        .burger {
+        .btn {
             display: none;
         }
     }
@@ -491,21 +491,47 @@ footer {
                 width: 7.5rem;
             }
             .links {
-                display: none;
+                padding: 1.5rem 0;
+                background-color: hsl(257, 27%, 26%);
+                position: absolute;
+                left: 50%;
+                top: 8rem;
+                transform: translateX(-50%);
+                display: flex;
+                opacity: 0;
+                pointer-events: none;
+                flex-direction: column;
+                width: 90%;
                 margin-left: 0;
+                z-index: 1;
+                border-radius: 8px;
+                transition: .4s;
+                .pages {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .link {
-                    margin-right: 1.4rem;
-                    color: hsl(257, 7%, 63%);
-                    font-weight: 700;
+                    padding: 1rem 10rem;
+                    margin-right: 0rem;
+                    color: #fff;
                 }
                 .login {
+                    border-top: 1px solid rgb(110, 110, 110);
+                    margin: 1rem 1.5rem 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .signin{
+                        margin-top: 1rem;
+                    }
                     .signup {
-                        margin-left: 0.5rem;
-                        background-color: hsl(180, 66%, 49%);
-                        font-weight: 700;
-                        color: #fff;
-                        border-radius: 25px;
+                        margin-left: 0rem;
+                        margin: 1rem 0 1.5rem;
                         padding: 0.6rem 1.3rem;
+                        width: 90%;
+                        max-width: 20rem;
+                        text-align: center;
                         &:hover {
                             cursor: pointer;
                             background-color: hsla(180, 66%, 49%, 0.6);
@@ -513,8 +539,49 @@ footer {
                     }
                 }
             }
-            .burger {
-                display: block;
+            .btn {
+                display: grid;
+                place-items: center;
+                width: 60px;
+                height: 50px;
+                cursor: pointer;
+                .burger {
+                    width: 35px;
+                    height: 4px;
+                    background-color: #333;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease-in-out;
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 35px;
+                        height: 4px;
+                        background-color: #333;
+                        border-radius: 10px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &::before {
+                        transform: translateY(-12px);
+                    }
+
+                    &::after {
+                        transform: translateY(12px);
+                    }
+                }
+                &.active .burger {
+                    transform: translateX(-50px);
+                    background: transparent;
+                    box-shadow: none;
+                    &::before {
+                        transform: rotate(45deg) translate(35px, -35px);
+                    }
+                    &::after {
+                        transform: rotate(-45deg) translate(35px, 35px);
+                    }
+                }
             }
         }
         .hero {
